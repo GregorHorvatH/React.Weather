@@ -1,0 +1,29 @@
+.img-wrapper {
+  margin-top: -25px;
+  margin-bottom: -25px;
+}
+.weather-image {
+  width: 95px;
+  margin: 0 auto;
+}
+
+.city {
+  &-delete {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: none;
+    cursor: default;
+    color: gray;
+
+    &:hover {
+      color: black;
+      font-weight: bold;
+    }
+  }
+
+  &:hover &-delete{
+    display: block;
+  }
+}
+
